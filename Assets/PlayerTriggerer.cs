@@ -6,15 +6,22 @@ using UnityEngine.UI;
 public class PlayerTriggerer : MonoBehaviour
 {
 
-    [SerializeField] FruitPrefab fruiter;
+    FruitPrefab fruiter;
     [SerializeField] public Slider slider;
+    [SerializeField] SliderController sldierController;
+    TomatoCreator tomato_creator;
+    
 
 
-
+    void Start() 
+    {
+        fruiter = tomato_creator.tomato.GetComponent<FruitPrefab>();
+            
+    }
 
     private void OnTriggerStay(Collider other)
     {
-        if (slider.value >= 100)
+        if (slider.value >= 99f)
         {
             switch (other.gameObject.tag)
             {
@@ -23,6 +30,8 @@ public class PlayerTriggerer : MonoBehaviour
                     break;
                 case "TomatoPlant":
                     fruiter.MoveToTarget(this.transform);
+                    sldierController.Execute();
+                    
                     break;
                 case "Coop":
                     //add chicken coop

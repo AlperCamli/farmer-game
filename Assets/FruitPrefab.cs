@@ -6,13 +6,14 @@ public class FruitPrefab : MonoBehaviour
 {
 
     [SerializeField] public float speed = 1f; // The speed at which the object moves
-
+    
+    
 
 
     public void MoveToTarget(Transform target)
     {
-
-
+        Debug.Log("moved");
+        this.transform.parent = target.transform;
         // Calculate the new position of the object
         Vector3 newPosition = Vector3.Lerp(transform.position, target.position, speed * Time.deltaTime);
 

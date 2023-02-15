@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2906742830762671423}
   - component: {fileID: 2906742830763671551}
   - component: {fileID: 4232676548979330614}
+  - component: {fileID: 5165547703974062114}
   m_Layer: 0
   m_Name: TomatoPlant_01
-  m_TagString: Untagged
+  m_TagString: TomatoPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +98,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitPrefab: {fileID: 5473569773201198281, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
+  tomatoParent: {fileID: 0}
+  tomatochildren: []
+--- !u!65 &5165547703974062114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906742830765859135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0.25, z: 0}

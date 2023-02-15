@@ -11,6 +11,7 @@ public class SliderController : MonoBehaviour
     [SerializeField] public Slider slider;
     [SerializeField] float sliderTime;
     [SerializeField] GameObject sliderObject;
+    [SerializeField] TomatoCreator tomato_creator;
     bool isLoading;
     
 
@@ -63,7 +64,7 @@ public class SliderController : MonoBehaviour
     
     public void Execute() 
     {
-
+        
         
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Market : MonoBehaviour
 {
      [SerializeField] SliderController sliderController;
+     
     
     void Start() 
     {

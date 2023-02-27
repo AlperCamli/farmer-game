@@ -238,7 +238,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -285,9 +285,17 @@ PrefabInstance:
       value: TomatoPlant_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2086907595}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 480859433}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: tomatoParent
       value: 
-      objectReference: {fileID: 1953507717}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
 --- !u!1 &377325304
@@ -426,7 +434,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -473,9 +481,17 @@ PrefabInstance:
       value: TomatoPlant_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2086907595}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 480859433}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: tomatoParent
       value: 
-      objectReference: {fileID: 1953507717}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
 --- !u!1001 &464384392
@@ -551,6 +567,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26dc1241d332c342b898a57f1164932, type: 3}
+--- !u!1 &467242413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 467242414}
+  - component: {fileID: 467242415}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467242414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467242413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.17959037, y: 1.0660425, z: -8.445671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &467242415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467242413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416aa913fc11b4e5488fdb3657f599c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2086907595}
+  slider: {fileID: 480859433}
 --- !u!1 &480859431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 480859431, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
@@ -565,17 +627,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &655205175 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
-  m_PrefabInstance: {fileID: 1662112489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11cb05bcb8528a24c968a7432583f8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &705507993
@@ -801,6 +852,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &930700925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+  m_PrefabInstance: {fileID: 385217086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cb05bcb8528a24c968a7432583f8ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +1005,7 @@ PrefabInstance:
     - target: {fileID: 125537601266649669, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
       propertyPath: tomato_creator
       value: 
-      objectReference: {fileID: 655205175}
+      objectReference: {fileID: 930700925}
     - target: {fileID: 7126682565931753712, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -992,6 +1054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7614672882393987658, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
 --- !u!114 &1487623975 stripped
@@ -1014,7 +1080,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1061,61 +1127,24 @@ PrefabInstance:
       value: TomatoPlant_01
       objectReference: {fileID: 0}
     - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2086907595}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 480859433}
+    - target: {fileID: 4232676548979330614, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
       propertyPath: tomatoParent
       value: 
-      objectReference: {fileID: 1953507717}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
---- !u!1 &1953507716
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1953507717}
-  m_Layer: 0
-  m_Name: TomatoesParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1953507717
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953507716}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086907595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7614672882393987658, guid: d5c1a0c8218ddc44f981f89b7b2fbbae, type: 3}
   m_PrefabInstance: {fileID: 1487623974}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2086907601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086907595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 416aa913fc11b4e5488fdb3657f599c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 480859433}
-  sldierController: {fileID: 1487623975}
 --- !u!1001 &2118352445
 PrefabInstance:
   m_ObjectHideFlags: 0

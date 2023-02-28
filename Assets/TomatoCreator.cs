@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class TomatoCreator : MonoBehaviour
 {
     public static int totalNumber = 0;
-    [SerializeField] GameObject fruitPrefab;
+    [SerializeField] GameObject tomatoPrefab;
     [SerializeField] int dropCount = 3;
     [SerializeField] float spread = 0.7f;
+    bool isCoroutineOver = true;
     
     
     int countDown= 5;
@@ -18,18 +19,26 @@ public class TomatoCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-        StartCoroutine(Instantiator(fruitPrefab));
+        StartCoroutine(Instantiator(tomatoPrefab));
     }
 
     
-
+    private void Update()
+    {
+        if (countDown > 0 && totalNumber - MoveObject.fruitNumber < 14 && isCoroutineOver == true)
+        {
+            StartCoroutine(Instantiator(tomatoPrefab));
+            return;  //to avoid the reduce countdown every frame
+        }
+        Debug.Log("Total number:" + totalNumber);  
+         
+    }
     
     
     public IEnumerator Instantiator(GameObject fruit) 
     {
-        while (countDown > 0 && totalNumber < 14)
+        isCoroutineOver = false;
+        while (countDown > 0 && totalNumber - MoveObject.fruitNumber < 14)
         {
             yield return new WaitForSeconds(1f);
             Debug.Log("Time left: " + countDown + " seconds");
@@ -54,11 +63,14 @@ public class TomatoCreator : MonoBehaviour
                 tomato.transform.position = position;
             }
             
-            //count and reduce the total number of tomatoes when collect it
+            
             
             
             countDown = 5;
+            
         }
+        isCoroutineOver = true;
+        
     }
 
 

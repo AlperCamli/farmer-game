@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public GameObject player; // assign the player
+    public GameObject market; // assign the market box
     public Slider slider;
     private void Awake() 
     {

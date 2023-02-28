@@ -97,10 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cb05bcb8528a24c968a7432583f8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 5473569773201198281, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
-  tomatoParent: {fileID: 0}
-  slider: {fileID: 0}
-  player: {fileID: 0}
+  tomatoPrefab: {fileID: 5473569773201198281, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
+  dropCount: 3
+  spread: 0.7
 --- !u!65 &5165547703974062114
 BoxCollider:
   m_ObjectHideFlags: 0

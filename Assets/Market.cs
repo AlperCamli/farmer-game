@@ -5,23 +5,16 @@ using UnityEngine.UI;
 
 public class Market : MonoBehaviour
 {
-     [SerializeField] SliderController sliderController;
+
+void IncreaseMoney() 
+{
+    //increase money based on sellings
+
+}
      
     
-    void Start() 
-    {
-        sliderController = FindObjectOfType<SliderController>();
-    }
     
-
-    private void OnTriggerStay(Collider other) 
-    {
-           if (sliderController.slider.value >= 100) 
-           {
-            sliderController.Execute();
-           }
-           
-    }
+    
     
     
 }
